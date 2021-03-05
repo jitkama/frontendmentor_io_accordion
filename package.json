@@ -1,0 +1,14 @@
+{
+  "name": "faq-accordion-card-main",
+  "version": "1.0.0",
+  "description": "Design preview for the FAQ Accordion Card coding challenge(./design/desktop-preview.jpg)",
+  "main": "index.html",
+  "scripts": {
+    "watchsass": "node-sass sass/main.scss public/css/main.css -w"
+  },
+  "author": "Jitka Martinkova",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^5.0.0"
+  }
+}

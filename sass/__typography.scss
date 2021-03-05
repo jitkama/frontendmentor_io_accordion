@@ -1,0 +1,24 @@
+body {
+   font-family: $font-stack;
+}
+h1 {
+   font-size: $font-h1;
+   font-weight: 700;
+   color: $color-text--dark;
+   margin: 0 0 2rem;
+   line-height: 1.5;
+}
+h2 {
+   color: $color-text--dark;
+   font-size: $font-h2;
+   line-height: 1.5;
+}
+h2.active {
+   font-weight: 700;
+}
+
+p {
+   font-size: $font-p;
+   color: $color-text--light;
+   line-height: 1.5;
+}

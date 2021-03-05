@@ -1,0 +1,52 @@
+// The designs were created to the following widths:
+//- Mobile: 375px - Desktop: 1440px
+
+*, *::before, *::after {
+	box-sizing: border-box;
+}
+
+html {
+   font-size: 62.5%;
+}
+
+body {
+   @include flex-center;
+   background-color: $color-bg--primary;
+   background-image: linear-gradient(to bottom, $color-bg--primary, $color-bg--secondary);
+   background-size: 100%;
+   min-height: 100vh;
+   height: 100%;
+   position: relative;
+}
+
+.container {
+   width: 92rem;
+   max-width: 90%;
+   margin: auto;
+   background-color: $color--white;
+   border-radius: 2rem;
+   padding: 7rem;
+   display: flex;
+   background-image: url(../images/bg-pattern-desktop.svg);
+   background-size: 75%;
+   background-repeat: no-repeat;
+   background-position: -130% center;
+}
+.left, .right {
+   width: 50%;
+   position: relative; 
+}
+@media screen and (max-width: 950px){
+   .container {
+      flex-direction: column;
+      margin-top: calc(0.3 * 100vw);
+      background-position: center -50%;
+   }
+   .left, .right {
+      width: 100%;
+      position: relative; 
+   }
+   .left {
+    overflow: visible;  
+   }
+}
