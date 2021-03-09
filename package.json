@@ -4,11 +4,19 @@
   "description": "Design preview for the FAQ Accordion Card coding challenge(./design/desktop-preview.jpg)",
   "main": "index.html",
   "scripts": {
-    "watchsass": "node-sass sass/main.scss public/css/main.css -w"
+    "watchsass": "node-sass sass/main.scss public/css/main.css -w",
+    "prefix": "postcss public/css/main.css --use=autoprefixer --map=false --output=public/css/main.css"
   },
   "author": "Jitka Martinkova",
   "license": "ISC",
+  "browserslist": "last 4 versions",
   "devDependencies": {
-    "node-sass": "^5.0.0"
+    "autoprefixer": "^10.2.5",
+    "clean-css-cli": "^5.2.1",
+    "node-sass": "^5.0.0",
+    "postcss-cli": "^8.3.1"
+  },
+  "dependencies": {
+    "postcss": "^8.2.7"
   }
 }
