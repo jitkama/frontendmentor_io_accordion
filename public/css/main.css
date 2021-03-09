@@ -84,6 +84,9 @@ body {
   min-height: 100vh;
   height: 100%;
   position: relative; }
+  @media screen and (max-width: 950px) {
+    body {
+      flex-direction: column; } }
 
 .container {
   width: 92rem;
@@ -196,3 +199,8 @@ body {
   bottom: 0; }
   .attribution a {
     color: #3e52a3; }
+  @media screen and (max-width: 950px) {
+    .attribution {
+      position: relative;
+      margin-top: 2rem;
+      width: 100%; } }
