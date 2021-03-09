@@ -69,6 +69,10 @@
    span {
       font-size: $font-h2;
       color: $color-text--active;
+      transition: transform .5s linear;
+   }
+   .arrow--active {
+      transform: rotate(180deg);
    }
 
    &:hover h2 {
